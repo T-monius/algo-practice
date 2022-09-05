@@ -15,4 +15,25 @@ describe('Test the climbStairs function for finding ways to stair `n`.', () => {
 
     assert.equal(ways_to_stair, 2);
   });
+
+  it('Finds three ways to third stair', () => {
+    const n = 3;
+    const ways_to_stair = climbStairs(n);
+
+    assert.equal(ways_to_stair, 3);
+  });
+
+  it('Finds 233 ways to twelfth stair', () => {
+    const n = 12;
+    const ways_to_stair = climbStairs(n);
+
+    assert.equal(ways_to_stair, 233);
+  });
+
+  it('Finds 14930352 ways to the 35th stair', () => {
+    const n = 35;
+    const ways_to_stair = climbStairs(n);
+
+    assert.equal(ways_to_stair, 14930352);
+  });
 });

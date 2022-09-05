@@ -54,7 +54,16 @@ Ways to climb at a given step is the total of ways from the immediate previous s
 
 ### Hard Algorithm
 
+No cache
 1. Create base case
   - If `n` is `1` return `1`
   - If `n` is `2` return `2`
 2. Return the sum of `n - 1` and `n - 2`
+
+Cache
+1. Check cache
+  - Return value if found
+2. Calculate ways to step from previous and penultimate steps
+  - Cache the value
+3. Return value from cache
+
