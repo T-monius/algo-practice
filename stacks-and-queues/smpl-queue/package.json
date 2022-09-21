@@ -1,0 +1,22 @@
+{
+  "name": "smpl-queue",
+  "version": "1.0.0",
+  "type":"module",
+  "description": "An implementation of a Queue with a singly linked list",
+  "main": "smplQueue.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "author": "Torrel",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
