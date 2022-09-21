@@ -1,7 +1,39 @@
 import assert from 'assert';
+import { ListNode } from '../ListNode.js'
 import { Queue } from '../smplQueue.js';
 
-describe('The Queue class', () => {
+describe('The ListNode class', () => {
+  const dummy = new ListNode();
+
+  it('Instantiates a new node', () => {
+    assert.equal(dummy instanceof ListNode, true);
+  });
+
+  it('Instantiates an empty list with a null value', () => {
+    assert.equal(dummy.val, null);
+  });
+
+  it('Instantiates an empty node with no next node', () => {
+    assert.equal(dummy.next, null);
+  });
+
+  it('Stores an optional initial value.', () => {
+    const val = 0
+    const aNode = new ListNode(val);
+
+    assert.equal(aNode.val, val)
+  })
+
+  it('Can store a next node', () => {
+    const aNode = new ListNode(0);
+    const bNode = new ListNode(1);
+    aNode.addNext(bNode);
+
+    assert.equal(aNode.next.val, 1);
+  })
+});
+
+xdescribe('The Queue class', () => {
   it('Should enqueue an item.', () => {
     const queue = new Queue;
     queue.enqueue(1);
