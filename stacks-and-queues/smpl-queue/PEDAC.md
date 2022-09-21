@@ -48,17 +48,17 @@ Enqueue two or more items
 
 ## Algorithm
 
-1. Make a `Node` class
+1. Make a `Node` class                        **CHECK**
 2. Make queue class
-  - Head property
+  - Head property                             **CHECK**
     - Instantiated w/ dummy node by default
-  - Tail property
+  - Tail property                             **CHECK**
     - Instantiated w/ head
-  - size property
-3. Make `enqueue` method
+  - size property                             **CHECK**
+3. Make `enqueue` method                      **CHECK**
   - Adds to tail
   - Increments `size`
-4. `dequque` method
+4. `dequeue` method                           _here_
   - Removes head and makes the next node the head
   - Decrements `size`
 5. `size` method reads size
