@@ -1,0 +1,22 @@
+{
+  "name": "valid-parentheses",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "A module for validating parenthese formatting of a string",
+  "main": "validParentheses.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "n"
+  },
+  "author": "Torrel",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^10.0.0"
+  }
+}
