@@ -74,3 +74,18 @@ path = "/.../"
 //       ^
 //         ^
 ```
+
+## Data structures
+
+- Stack/array
+
+## Algorithm
+
+1. Declare a stack variable, array
+2. Iterate over the input path
+3.   If a character is a slash, push to stackif previous is not
+     If character is a period, count run
+       Push n periods to stack if count greater than 2
+       Else set idx to idx plus count
+     Push all other characters to stack
+4. Join stack and return
