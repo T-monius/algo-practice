@@ -29,4 +29,18 @@ describe('The simplifyPath function', () => {
 
     assert.equal(canonicalLikePath, '/...');
   });
+
+  it('Drops elements of path that lead up to directory reference', () => {
+    const unixLikePath = "/a/./b/../../c/";
+    const canonicalLikePath = simplifyPath(unixLikePath);
+
+    assert.equal(canonicalLikePath, "/c");
+  });
+
+  it('Drops elements of path that lead up to directory reference', () => {
+    const unixLikePath = "/a/../../b/../c//.//";
+    const canonicalLikePath = simplifyPath(unixLikePath);
+
+    assert.equal(canonicalLikePath, "/c");
+  });
 });

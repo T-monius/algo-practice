@@ -31,9 +31,13 @@ const simplifyPath = (path) => {
     } else if (char === '.') {
       const periodCount = countConsecutivePeriods(path, idx);
 
-      if (periodCount > 2) { pushPeriodsToStack(periodCount, stack) };
-      idx += periodCount;
-      continue;
+      if (periodCount > 2) {
+        pushPeriodsToStack(periodCount, stack)
+        idx += periodCount;
+        continue;
+      } else if (periodCount == 2) {
+        stack.length = 1;
+      };
     } else {
       stack.push(char);
     };
