@@ -82,6 +82,11 @@ Return diamond
 
 input_letter = 'B'
 
+  A
+ B B
+  A
+
+input_letter = 'C'
 
   A
  B B
